@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPExam"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="urlTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="https://rarlab.com" VerticalAlignment="Top" Width="171" Margin="10,29,0,0"/>
+        <Label Content="URL: " HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top"/>
+        <Button Click="GetFiles" Content="Получить файлы" HorizontalAlignment="Left" Margin="186,29,0,0" VerticalAlignment="Top" Width="116" Height="23"/>
+        <ListBox Name="filesListBox" HorizontalAlignment="Left" Height="352" Margin="10,57,0,0" VerticalAlignment="Top" Width="292"/>
+        <TextBox Name="pathTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" Margin="531,29,0,0"/>
+        <Label Content="Путь для скачивания и название файла: " HorizontalAlignment="Left" Margin="531,3,0,0" VerticalAlignment="Top"/>
+        <Button Click="DownloadFile" Content="Скачать" HorizontalAlignment="Left" Margin="707,29,0,0" VerticalAlignment="Top" Width="75" Height="23"/>
+        <TextBox IsReadOnly="True" Name="logTextBox" HorizontalAlignment="Left" Margin="531,57,0,0" TextWrapping="Wrap" Text="Лог:" VerticalAlignment="Top" Height="352" Width="251"/>
+    </Grid>
+</Window>
